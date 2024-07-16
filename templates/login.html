@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.email.label }}
+            <br>
+            {{ form.email(class="form-control") }}
+        </p>
+        <p>
+            {{ form.password.label }}
+            <br>
+            {{ form.password(class="form-control") }}
+        </p>
+        <p>{{ form.submit(class="btn btn-primary") }}</p>
+    </form>
+</body>
+</html>
